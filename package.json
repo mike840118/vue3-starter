@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier . --write",
-    "prepare": "husky"
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@vueuse/core": "^14.1.0",
@@ -36,13 +35,8 @@
     "unplugin-auto-import": "^20.3.0",
     "unplugin-vue-components": "^30.0.0",
     "unplugin-vue-router": "^0.19.2",
-    "vite": "npm:rolldown-vite@7.2.5",
+    "vite": "^7.3.0",
     "vue-tsc": "^3.1.4"
   },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
-  },
-    "lint-staged": {
-    "*.{ts,tsx,js,jsx,vue}": ["eslint --fix", "prettier --write"]
-  }
+  "overrides": {}
 }
