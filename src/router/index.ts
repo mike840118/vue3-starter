@@ -8,7 +8,7 @@ const routes: RouteRecordRaw[] = [
   name: 'post-detail',
   component: () => import('../pages/PostDetailPage.vue'),
   props: true,
-},  { path: '/about', name: 'about', component: () => import('../pages/AboutPage.vue') },
+},  { path: '/about', name: 'about', component: () => import('../pages/AboutPage/AboutPage.vue') },
   { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import('../pages/NotFoundPage.vue') },
 ]
 

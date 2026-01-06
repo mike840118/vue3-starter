@@ -5,8 +5,7 @@
         </div>
 
         <h1>{{ title }}</h1>
-        <p class="muted">slug：{{ slug }}</p>
-
+        <p class="muted">slug：{{ safeSlug }}</p>
         <article class="article">
             <p>這裡是文章內容示例。下一步可以改成讀 JSON 或 Markdown。</p>
         </article>
@@ -16,12 +15,15 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps<{ slug: string }>()
+const props = defineProps<{ slug?: string }>()
 
-const title = computed(() =>
-    props.slug
+const safeSlug = computed(() => props.slug ?? '')
+
+const title = computed(() => {
+    if (!safeSlug.value) return 'Post'
+    return safeSlug.value
         .split('-')
         .map((s) => s[0]?.toUpperCase() + s.slice(1))
         .join(' ')
-)
+})
 </script>
