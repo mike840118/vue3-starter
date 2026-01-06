@@ -1,13 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { createRouter, createWebHistory } from 'vue-router'
-import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-})
+import { router } from './router'
+import './styles/global.css'
 
 createApp(App)
   .use(createPinia())

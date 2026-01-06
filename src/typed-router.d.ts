@@ -30,6 +30,41 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/AboutPage': RouteRecordInfo<
+      '/AboutPage',
+      '/AboutPage',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/HomePage': RouteRecordInfo<
+      '/HomePage',
+      '/HomePage',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/NotFoundPage': RouteRecordInfo<
+      '/NotFoundPage',
+      '/NotFoundPage',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/PostDetailPage': RouteRecordInfo<
+      '/PostDetailPage',
+      '/PostDetailPage',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/PostsPage': RouteRecordInfo<
+      '/PostsPage',
+      '/PostsPage',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
   }
 
   /**
@@ -46,6 +81,36 @@ declare module 'vue-router/auto-routes' {
     'src/pages/index.vue': {
       routes:
         | '/'
+      views:
+        | never
+    }
+    'src/pages/AboutPage.vue': {
+      routes:
+        | '/AboutPage'
+      views:
+        | never
+    }
+    'src/pages/HomePage.vue': {
+      routes:
+        | '/HomePage'
+      views:
+        | never
+    }
+    'src/pages/NotFoundPage.vue': {
+      routes:
+        | '/NotFoundPage'
+      views:
+        | never
+    }
+    'src/pages/PostDetailPage.vue': {
+      routes:
+        | '/PostDetailPage'
+      views:
+        | never
+    }
+    'src/pages/PostsPage.vue': {
+      routes:
+        | '/PostsPage'
       views:
         | never
     }
